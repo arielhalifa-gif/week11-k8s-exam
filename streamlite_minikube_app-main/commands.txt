@@ -1,0 +1,36 @@
+# checkout to branch docker
+    git checkout -b docker
+
+
+### Docker commands ###
+
+# building the image
+    docker build arielhalifa-app:v1
+
+# run container
+    docker run -d --name arielhlaifa-container -p 8000:8000
+
+# status
+    docker logs arielhalifa-container
+
+# pushing to docker hub
+    docker push
+
+# checkout to branch yaml and service
+    git checkout -b yaml
+    git checkout -b service
+
+### kubernetes commands ###
+
+# activate the pod file
+    kubectl apply -f pod.yaml
+
+# activate the service file
+    kubectl apply -f service.yaml
+
+# status check
+    kubectl get pods
+    kubectl get services
+
+# checkout to branch screenshot
+    git checkout -b screenshot
